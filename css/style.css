@@ -611,14 +611,15 @@ img.hover-shadow {
 
 .contact {
     font-family: 'Rubik', sans-serif;
-    padding: 150px 60px 0;
+    padding: 150px 60px 60px;
+    background-color: aqua;
     /* text-align: left; */
 }
 
 .contact-form .input-control {
     padding: 20px;
-    width: 50%;
-    border-radius: 50px;
+    width: 100%;
+    /* border-radius: 50px; */
     border: 1px black solid;
 }
 
@@ -685,6 +686,9 @@ img.hover-shadow {
 }
 .form-whole .head{
     margin-top: 3%;
+}
+.form-whole .heading{
+    margin-top: 0%;
 }
 .form-whole .head h1{
     font-family: 'Rubik',sans-serif;
@@ -804,12 +808,25 @@ img.hover-shadow {
     padding: 3px;
 }
 
-.selected .buttons .anchor-button button{
-    background-color: white;
+.selected .buttons .anchor-buttons button{
+    background-color: red;
     border: 1px solid black;
     color: black;
 }
-.package-button .anchor-buttons button {
+.package-button .anchor-buttoned button {
+    background-color: black;
+    color: white;
+}
+.package-button .anchor-button a button {
+    background-color: red;
+    color: white;
+}
+.package-button .anchor-buttoned button span {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px;
+}
+.package-button .anchor-button button {
     background-color: red;
     border: 1px solid black;
     color: black;
@@ -876,6 +893,124 @@ img.hover-shadow {
     padding: 0;
 }
 /* CHECKOUT PAGE SECTION */
+
+/* PACKAGE PAGE SECTION */
+.choose-img img{
+    width: 50%;
+    border-radius: 10px;
+}
+.package-section{
+    padding: 150px 0 0;
+}
+.selecteds{
+    margin-top: 5%;
+}
+.selecteds img{
+    width: 100%;
+}
+.selecteds h3{
+    font-weight: bold;
+    font-family: 'Rubik',sans-serif;
+}
+.selecteds p button{
+    width: 100%;
+    padding: 5px 30px;
+    border: 1px solid black;
+    background: transparent;
+    font-family: 'Rubik',sans-serif;
+    font-weight: bold;
+}
+.selecteds span .sizeS{
+    width: 30px;
+    height: 50px;
+    /* width: 100%; */
+    padding: 5px 30px;
+    border: 1px solid black;
+    background: transparent;
+    font-family: 'Rubik',sans-serif;
+    font-weight: bold;
+}.selecteds span{
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.selecteds span .sizeL{
+    width: 150px;
+    height: 50px;
+    /* width: 100%; */
+    padding: 5px 30px;
+    border: 1px solid black;
+    background: transparent;
+    font-family: 'Rubik',sans-serif;
+    font-weight: bold;
+}
+.selecteds span .sizeM{
+    width: 30px;
+    height: 100px;
+    /* width: 100%; */
+    padding: 5px 30px;
+    border: 1px solid black;
+    background: transparent;
+    font-family: 'Rubik',sans-serif;
+    font-weight: bold;
+}
+.selecteds .color .purple{
+    background-color: rebeccapurple;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 10px;
+}
+.selecteds .color .blue{
+    background-color: cornflowerblue;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 10px;
+}
+.selecteds .color .white{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 10px;
+}
+.selecteds .color .black{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 10px;
+}
+.selecteds .color .pink{
+    background-color: plum;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 10px;
+}
+.selecteds .color .green{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 10px;
+}
+.selecteds .color .grey{
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 10px;
+}
+.selecteds .color .gold{
+    background-color: goldenrod;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 10px;
+}
+/* PACKAGE PAGE SECTION */
 @media only screen and (max-width:1100px) {
     .containers nav ul {
         display: block;

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fonts (2).css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/icomoon/style.css" />
+    <link rel="stylesheet" href="./css/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style (4).css" />
+    <link rel="stylesheet" href="./css/normalize.min.css" />
+
+    <script src="./js/jquery-1.11.0.min.js"></script>
+    <script src="./js/jquery.nav.js"></script>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="header js-header">
+            <div class="containers container">
+                <div class="logo">
+                    <!-- <h1>PH<span><img src="./images/logo.png" alt=""></span>TO<span class="photo-g">G</span></h1> -->
+                    <a href="./index.html">
+                        <img src="./images/Screenshot 2023-03-01 021642.png" alt="" />
+                    </a>
+                </div>
+                <nav>
+                    <input type="checkbox" name="" class="show-none" id="show-burger" />
+                    <ul>
+                        <label for="show-burger">
+                            <i class="icon-close style-close" id="closebtn"></i>
+                        </label>
+                        <li><a href="./service.html" class="active">Services</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                        <li><a href="./faqs.html">FAQs</a></li>
+                    </ul>
+                </nav>
+
+                <li class=" nav-profile dropdown-boss account">
+                    <a class="nav-img" href="#">
+                        <img src="images/faces/face28.jpg" alt="profile" />
+                        <!-- <i class="icon-arrow_drop_down"></i> -->
+                    </a>
+                    <div class="dropdown-container">
+                        <a class="dropdown-item" href="./service.html">
+                            <i class="ti-settings text-primary"></i>
+                            Settings
+                        </a>
+                        <a class="dropdown-item" href="./index (3).html">
+                            <i class="ti-settings text-primary"></i>
+                            Dashboard
+                        </a>
+                        <a class="dropdown-item" href="./index.html">
+                            <i class="ti-power-off text-primary"></i>
+                            Logout
+                        </a>
+                    </div>
+                </li>
+                <label for="show-burger">
+                    <span class="icon-bars" id="closebtn"></span>
+                </label>
+            </div>
+        </header>
+
+
+
+        <div class="summary-section">
+            <nav aria-label="Page navigation example" class="seperator" id="seperator">
+                <ul class="d-flex justify-content-center">
+                    <li class="page-item" id="linkSummary">
+                        <a class="page-link" href="./summary.html">Order Summary</a>
+                    </li>
+                    <!-- <li class="page-item" id="linkDetails">
+                        <a class="page-link" href="#">Personal Details</a>
+                    </li> -->
+                    <li class="page-item" id="linkShipping">
+                        <a class="page-link" href="./shipping.html">Shipping Details</a>
+                    </li>
+                    <li class="page-item" id="linkConfirm">
+                        <a class="page-link" href="./confirm.html">Confirmation Details</a>
+                    </li>
+                    <li class="page-item" id="linkPayment">
+                        <a class="page-link active" href="./payment.html">Payment Details</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="payment-details-section" id="payment-details-section">
+            <div class="container">
+                <div class="row">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button> -->
+                                </div>
+                                <div class="modal-body text-center">
+                                    <i class="icon-thumb_up"></i>
+                                    <h5>Your order was successful</h5>
+                                    <h2>Download selected photos</h2>
+                                    <a href="./services.html">
+                                        <button class="btn btn-dark">Download Photos <span
+                                                style="background-color: red; border-radius: 50%; padding: 3px;">3</span></button>
+                                    </a>
+                                </div>
+                                <!-- <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary"><a href="./checkout.html">Download
+                                            Photos</a></button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment-details">
+                        <h1>Payment Details</h1>
+                        <p>Complete your payment by providing your payment details below</p>
+                        <div class="payment-plan">
+                            <span>
+                                <input type="radio" name="" id="" />
+                                Credit Card
+                            </span>
+                            <span>
+                                <input type="radio" name="" id="" />
+                                <img src="./images/amazon-logo-removebg-preview.png" alt="" />
+                                <img src="./images/dropbox-logo1.png" alt="" />
+                            </span>
+                            <span>
+                                <input type="radio" name="" id="" />
+                                <img src="./images/amazon-logo-removebg-preview.png" alt="" />
+                                <img src="./images/dropbox-logo1.png" alt="" />
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form action="">
+                            <div class="input-bottom" id="name">
+                                <p>FullName *</p>
+                                <input type="text" name="" id="" placeholder="e.g Michael Williams"
+                                    class="input-control" required />
+                            </div>
+                            <div class="input-bottom">
+                                <p>Card Number *</p>
+                                <input type="text" name="" id="" placeholder="e.g 10/26" class="input-control"
+                                    required />
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-bottom">
+                                        <p>Expiration Date (MM/YY) *</p>
+                                        <input type="text" name="" id="" placeholder="e.g 10/26" class="input-control"
+                                            required />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-bottom">
+                                        <p>CV/CVV *</p>
+                                        <input type="text" name="" id="" placeholder="e.g 10/26" class="input-control"
+                                            required />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="btn">
+                            <a>
+                                <button data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script (2).js"></script>
+</body>
+
+</html>
