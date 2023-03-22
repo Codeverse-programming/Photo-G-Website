@@ -7,7 +7,7 @@ document.querySelector("#loginAccount").addEventListener("submit", e => {
 
     if (surname !== "" && email !== "" && phonenumber !== "" && code !== "") {
         // document.querySelector(".success").textContent = "Account created successfully"
-        window.location.href = 'services.html'
+        window.location.href = 'code.html'
     } else {
         document.querySelector(".error").textContent = "Invalid password combination"
     }

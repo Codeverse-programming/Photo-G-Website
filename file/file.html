@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Students Admin Portal</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../vendors/feather/feather.css" />
+    <link rel="stylesheet" href="../vendors/ti-icons/css/themify-icons.css" />
+    <link rel="stylesheet" href="../vendors/css/vendor.bundle.base.css" />
+    <link rel="stylesheet" href="../css/icomoon/style.css" />
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="../vendors/datatables.net-bs4/dataTables.bootstrap4.css" />
+    <link rel="stylesheet" href="../vendors/ti-icons/css/themify-icons.css" />
+    <link rel="stylesheet" type="text/css" href="../js/select.dataTables.min.css" />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../css/vertical-layout-light/style (2).css" />
+    <link rel="stylesheet" href="../css/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="../css/style (5).css" />
+    <!-- endinject -->
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo mr-5" href="../index (3).html"><img
+                        src="../images/dashboard/logo-1.png" alt=""></a>
+                <a class="navbar-brand brand-logo-mini" href="../index (3).html"><img
+                        src="../images/dashboard/logo-1.png" alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="icon-menu"></span>
+                </button>
+                <ul class="navbar-nav mr-lg-2">
+                    <li class="nav-item nav-search d-none d-lg-block">
+                        <div class="input-group">
+                            <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                                <span class="input-group-text" id="search">
+                                    <i class="icon-search"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now"
+                                aria-label="search" aria-describedby="search">
+                        </div>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-toggle="offcanvas">
+                    <span class="icon-menu"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index (3).html">
+                            <i class="icon-user-circle-o menu-icon"></i>
+                            <span class="menu-title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../order/order.html">
+                            <i class="icon-shopping-cart menu-icon"></i>
+                            <span class="menu-title">Orders</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../packages/package.html">
+                            <i class="icon-shopping-bag menu-icon"></i>
+                            <span class="menu-title">Packages</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../student_class/school.html">
+                            <i class="icon-school menu-icon"></i>
+                            <span class="menu-title">School</span>
+                            <!-- <i class="menu-arrow"></i> -->
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../file/file.html">
+                          <i class="icon-file-image-o menu-icon"></i>
+                          <span class="menu-title">File Manager</span>
+                          <!-- <i class="menu-arrow"></i> -->
+                        </a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <i class="icon-settings menu-icon"></i>
+                            <span class="menu-title">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="container">
+                        <div id="main-content" class="file_manager">
+                            <h3>Images</h3>
+                            <div class="container">
+                                <div class="row clearfix">
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <div class="file">
+                                                <a href="javascript:void(0);">
+                                                    <div class="hover">
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-trash"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-icon btn-danger"
+                                                            onclick="openModal();currentSlidee(1)">
+                                                            <i class="icon-search-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="image">
+                                                        <img src="../images/unique-1.jpeg" alt="img" class="img-fluid">
+                                                    </div>
+                                                    <div class="file-name">
+                                                        <p class="m-b-5 text-muted">Class1.jpg</p>
+                                                        <small>Size: 2MB <span class="date text-muted">Mar 19,
+                                                                2023</span></small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <div class="file">
+                                                <a href="javascript:void(0);">
+                                                    <div class="hover">
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-trash"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-icon btn-danger"
+                                                            onclick="openModal();currentSlidee(2)">
+                                                            <i class="icon-search-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="image">
+                                                        <img src="../images/unique-2.jpeg" alt="img" class="img-fluid">
+                                                    </div>
+                                                    <div class="file-name">
+                                                        <p class="m-b-5 text-muted">img21545ds.jpg</p>
+                                                        <small>Size: 2MB <span class="date text-muted">Mar 19,
+                                                                2023</span></small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <div class="file">
+                                                <a href="javascript:void(0);">
+                                                    <div class="hover">
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-trash"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-icon btn-danger"
+                                                            onclick="openModal();currentSlidee(3)">
+                                                            <i class="icon-search-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="image">
+                                                        <img src="../images/unique-3.jpeg" alt="img" class="img-fluid">
+                                                    </div>
+                                                    <div class="file-name">
+                                                        <p class="m-b-5 text-muted">img21545ds.jpg</p>
+                                                        <small>Size: 2MB <span class="date text-muted">Mar 19,
+                                                                2023</span></small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <div class="file">
+                                                <a href="javascript:void(0);">
+                                                    <div class="hover">
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-trash"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-icon btn-danger"
+                                                            onclick="openModal();currentSlidee(4)">
+                                                            <i class="icon-search-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="image">
+                                                        <img src="../images/unique-4.jpeg" alt="img" class="img-fluid">
+                                                    </div>
+                                                    <div class="file-name">
+                                                        <p class="m-b-5 text-muted">img21545ds.jpg</p>
+                                                        <small>Size: 2MB <span class="date text-muted">Mar 19,
+                                                                2023</span></small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <div class="file">
+                                                <a href="javascript:void(0);">
+                                                    <div class="hover">
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-trash"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-icon btn-danger"
+                                                            onclick="openModal();currentSlidee(5)">
+                                                            <i class="icon-search-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="image">
+                                                        <img src="../images/unique-5.jpeg" alt="img" class="img-fluid">
+                                                    </div>
+                                                    <div class="file-name">
+                                                        <p class="m-b-5 text-muted">img21545ds.jpg</p>
+                                                        <small>Size: 2MB <span class="date text-muted">Mar 19,
+                                                                2023</span></small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <div class="file">
+                                                <a href="javascript:void(0);">
+                                                    <div class="hover">
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-trash"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-icon btn-danger"
+                                                            onclick="openModal();currentSlidee(6)">
+                                                            <i class="icon-search-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="image">
+                                                        <img src="../images/unique-6.jpg" alt="img" class="img-fluid">
+                                                    </div>
+                                                    <div class="file-name">
+                                                        <p class="m-b-5 text-muted">img21545ds.jpg</p>
+                                                        <small>Size: 2MB <span class="date text-muted">Mar 19,
+                                                                2023</span></small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <div class="file">
+                                                <a href="javascript:void(0);">
+                                                    <div class="hover">
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-trash"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-search-plus" onclick="openModal();currentSlidee(7)"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="image">
+                                                        <img src="../images/class-1.jpeg" alt="img" class="img-fluid">
+                                                    </div>
+                                                    <div class="file-name">
+                                                        <p class="m-b-5 text-muted">img21545ds.jpg</p>
+                                                        <small>Size: 2MB <span class="date text-muted">Mar 19,
+                                                                2023</span></small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <div class="file">
+                                                <a href="javascript:void(0);">
+                                                    <div class="hover">
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-trash"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-search-plus" onclick="openModal();currentSlidee(8)"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="image">
+                                                        <img src="../images/class-2.jpeg" alt="img" class="img-fluid">
+                                                    </div>
+                                                    <div class="file-name">
+                                                        <p class="m-b-5 text-muted">img21545ds.jpg</p>
+                                                        <small>Size: 2MB <span class="date text-muted">Mar 19,
+                                                                2023</span></small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <div class="file">
+                                                <a href="javascript:void(0);">
+                                                    <div class="hover">
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-trash"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-search-plus" onclick="openModal();currentSlidee(9)"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="image">
+                                                        <img src="../images/class-3.jpeg" alt="img" class="img-fluid">
+                                                    </div>
+                                                    <div class="file-name">
+                                                        <p class="m-b-5 text-muted">img21545ds.jpg</p>
+                                                        <small>Size: 2MB <span class="date text-muted">Mar 19,
+                                                                2023</span></small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <div class="file">
+                                                <a href="javascript:void(0);">
+                                                    <div class="hover">
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-trash"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-search-plus" onclick="openModal();currentSlidee(10)"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="image">
+                                                        <img src="../images/class-4 (1).jpg" alt="img"
+                                                            class="img-fluid">
+                                                    </div>
+                                                    <div class="file-name">
+                                                        <p class="m-b-5 text-muted">img21545ds.jpg</p>
+                                                        <small>Size: 2MB <span class="date text-muted">Mar 19,
+                                                                2023</span></small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <div class="file">
+                                                <a href="javascript:void(0);">
+                                                    <div class="hover">
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-trash"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-search-plus" onclick="openModal();currentSlidee(11)"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="image">
+                                                        <img src="../images/class-5.jpg" alt="img" class="img-fluid">
+                                                    </div>
+                                                    <div class="file-name">
+                                                        <p class="m-b-5 text-muted">img21545ds.jpg</p>
+                                                        <small>Size: 2MB <span class="date text-muted">Mar 19,
+                                                                2023</span></small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <div class="file">
+                                                <a href="javascript:void(0);">
+                                                    <div class="hover">
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-trash"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-search-plus" onclick="openModal();currentSlidee(12)"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="image">
+                                                        <img src="../images/class-6.jpg" alt="img" class="img-fluid">
+                                                    </div>
+                                                    <div class="file-name">
+                                                        <p class="m-b-5 text-muted">img21545ds.jpg</p>
+                                                        <small>Size: 2MB <span class="date text-muted">Mar 19,
+                                                                2023</span></small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <div class="file">
+                                                <a href="javascript:void(0);">
+                                                    <div class="hover">
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-trash"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-search-plus" onclick="openModal();currentSlidee(13)"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="image">
+                                                        <img src="../images/grad-1.jpeg" alt="img" class="img-fluid">
+                                                    </div>
+                                                    <div class="file-name">
+                                                        <p class="m-b-5 text-muted">img21545ds.jpg</p>
+                                                        <small>Size: 2MB <span class="date text-muted">Mar 19,
+                                                                2023</span></small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <div class="file">
+                                                <a href="javascript:void(0);">
+                                                    <div class="hover">
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-trash"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-search-plus" onclick="openModal();currentSlidee(14)"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="image">
+                                                        <img src="../images/grad-2.jpeg" alt="img" class="img-fluid">
+                                                    </div>
+                                                    <div class="file-name">
+                                                        <p class="m-b-5 text-muted">img21545ds.jpg</p>
+                                                        <small>Size: 2MB <span class="date text-muted">Mar 19,
+                                                                2023</span></small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <div class="file">
+                                                <a href="javascript:void(0);">
+                                                    <div class="hover">
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-trash"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-search-plus" onclick="openModal();currentSlidee(15)"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="image">
+                                                        <img src="../images/grad-3.jpeg" alt="img" class="img-fluid">
+                                                    </div>
+                                                    <div class="file-name">
+                                                        <p class="m-b-5 text-muted">img21545ds.jpg</p>
+                                                        <small>Size: 2MB <span class="date text-muted">Mar 19,
+                                                                2023</span></small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <div class="file">
+                                                <a href="javascript:void(0);">
+                                                    <div class="hover">
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-trash"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-icon btn-danger">
+                                                            <i class="icon-search-plus" onclick="openModal();currentSlidee(16)"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="image">
+                                                        <img src="../images/grad-4.jpeg" alt="img" class="img-fluid">
+                                                    </div>
+                                                    <div class="file-name">
+                                                        <p class="m-b-5 text-muted">img21545ds.jpg</p>
+                                                        <small>Size: 2MB <span class="date text-muted">Mar 19,
+                                                                2023</span></small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close cursor" onclick="closeModal()"><i
+                                            class="icon-close demi-close"></i></span>
+                                    <div class="mySlides demiMySlides">
+                                        <div class="numbertext">1 / 16</div>
+                                        <img src="../images/unique-1.jpeg" style="width: 100%" />
+                                    </div>
+
+                                    <div class="mySlides demiMySlides">
+                                        <div class="numbertext">2 / 16</div>
+                                        <img src="../images/unique-2.jpeg" style="width: 100%" />
+                                    </div>
+
+                                    <div class="mySlides demiMySlides">
+                                        <div class="numbertext">3 / 16</div>
+                                        <img src="../images/unique-3.jpeg" style="width: 100%" />
+                                    </div>
+                                    <div class="mySlides demiMySlides">
+                                        <div class="numbertext">4 / 16</div>
+                                        <img src="../images/unique-4.jpeg" style="width: 100%" />
+                                    </div>
+                                    <div class="mySlides demiMySlides">
+                                        <div class="numbertext">5 / 16</div>
+                                        <img src="../images/unique-5.jpeg" style="width: 100%" />
+                                    </div>
+                                    <div class="mySlides demiMySlides">
+                                        <div class="numbertext">6 / 16</div>
+                                        <img src="../images/unique-6.jpg" style="width: 100%" />
+                                    </div>
+                                    <div class="mySlides demiMySlides">
+                                        <div class="numbertext">7 / 16</div>
+                                        <img src="../images/class-1.jpeg" style="width: 100%" />
+                                    </div>
+                                    <div class="mySlides demiMySlides">
+                                        <div class="numbertext">8 / 16</div>
+                                        <img src="../images/class-2.jpeg" style="width: 100%" />
+                                    </div>
+                                    <div class="mySlides demiMySlides">
+                                        <div class="numbertext">9 / 16</div>
+                                        <img src="../images/class-3.jpeg" style="width: 100%" />
+                                    </div>
+                                    <div class="mySlides demiMySlides">
+                                        <div class="numbertext">10 / 16</div>
+                                        <img src="../images/class-4 (1).jpg" style="width: 100%" />
+                                    </div>
+                                    <div class="mySlides demiMySlides">
+                                        <div class="numbertext">11 / 16</div>
+                                        <img src="../images/class-5.jpg" style="width: 100%" />
+                                    </div>
+                                    <div class="mySlides demiMySlides">
+                                        <div class="numbertext">12 / 16</div>
+                                        <img src="../images/class-6.jpg" style="width: 100%" />
+                                    </div>
+                                    <div class="mySlides demiMySlides">
+                                        <div class="numbertext">13 / 16</div>
+                                        <img src="../images/grad-1.jpeg" style="width: 100%" />
+                                    </div>
+                                    <div class="mySlides demiMySlides">
+                                        <div class="numbertext">14 / 16</div>
+                                        <img src="../images/grad-2.jpeg" style="width: 100%" />
+                                    </div>
+                                    <div class="mySlides demiMySlides">
+                                        <div class="numbertext">15 / 16</div>
+                                        <img src="../images/grad-3.jpeg" style="width: 100%" />
+                                    </div>
+                                    <div class="mySlides demiMySlides">
+                                        <div class="numbertext">16 / 16</div>
+                                        <img src="../images/grad-4.jpeg" style="width: 100%" />
+                                    </div>
+                                    <!-- Next/previous controls -->
+                                    <a class="prev" onclick="plusSlidee(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlidee(1)">&#10095;</a>
+
+                                    <!-- Caption text -->
+                                    <div class="caption-container">
+                                        <p id="caption"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+
+    <!-- plugins:js -->
+    <script src="../vendors/js/vendor.bundle.base.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="../vendors/chart.js/Chart.min.js"></script>
+    <script src="../vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <script src="../js/dataTables.select.min.js"></script>
+
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../js/off-canvas.js"></script>
+    <script src="../js/hoverable-collapse.js"></script>
+    <script src="../js/template.js"></script>
+    <script src="../js/settings.js"></script>
+    <script src="../js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/Chart.roundedBarCharts.js"></script>
+    <script src="../js/script (2).js"></script>
+    <script src="../js/script.js"></script>
+    <!-- End custom js for this page-->
+</body>
+
+</html>

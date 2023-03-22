@@ -1,35 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const sarahSection = document.querySelector("#sarah-section");
-    const personSection = document.querySelector("#individual-section");
-    const gradSection = document.querySelector("#graduation-section");
-
-    document.querySelector("#linkAll").addEventListener("click", e => {
-        e.preventDefault();
-        personSection.classList.remove("form--hidden");
-        gradSection.classList.remove("form--hidden");
-        sarahSection.classList.remove("form--hidden");
-    });
-
-    document.querySelector("#linkClass").addEventListener("click", e => {
-        e.preventDefault();
-        personSection.classList.add("form--hidden");
-        gradSection.classList.add("form--hidden");
-        sarahSection.classList.remove("form--hidden");
-    });
-
-    document.querySelector("#linkPerson").addEventListener("click", e => {
-        e.preventDefault();
-        personSection.classList.remove("form--hidden");
-        gradSection.classList.add("form--hidden");
-        sarahSection.classList.add("form--hidden");
-    });
-    document.querySelector("#linkGrad").addEventListener("click", e => {
-        e.preventDefault();
-        personSection.classList.add("form--hidden");
-        gradSection.classList.remove("form--hidden");
-        sarahSection.classList.add("form--hidden");
-    });
-
     const shippingDetails = document.querySelector("#shipping-section")
     const orderSummary = document.querySelector("#order-summary-section")
     const confirmDetails = document.querySelector("#confirm-details")
@@ -103,8 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // document.addEventListener("DOMContentLoaded", () => {
 // });
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const package1 = document.querySelector("#package1")

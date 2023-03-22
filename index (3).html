@@ -3,31 +3,40 @@
 
 <head>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Students Admin Portal</title>
   <!-- plugins:css -->
-  <link rel="stylesheet" href="./vendors/feather/feather.css">
-  <link rel="stylesheet" href="./vendors/ti-icons/css/themify-icons.css">
-  <link rel="stylesheet" href="./vendors/css/vendor.bundle.base.css">
-  <link rel="stylesheet" href="./css/icomoon/style.css">
+  <link rel="stylesheet" href="./vendors/feather/feather.css" />
+  <link rel="stylesheet" href="./vendors/ti-icons/css/themify-icons.css" />
+  <link rel="stylesheet" href="./vendors/css/vendor.bundle.base.css" />
+  <link rel="stylesheet" href="./css/icomoon/style.css" />
   <!-- endinject -->
   <!-- Plugin css for this page -->
-  <link rel="stylesheet" href="./vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-  <link rel="stylesheet" href="./vendors/ti-icons/css/themify-icons.css">
-  <link rel="stylesheet" type="text/css" href="./js/select.dataTables.min.css">
+  <link rel="stylesheet" href="./vendors/datatables.net-bs4/dataTables.bootstrap4.css" />
+  <link rel="stylesheet" href="./vendors/ti-icons/css/themify-icons.css" />
+  <link rel="stylesheet" type="text/css" href="./js/select.dataTables.min.css" />
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="./css/vertical-layout-light/style (2).css">
+  <link rel="stylesheet" href="./css/vertical-layout-light/style (2).css" />
+  <link rel="stylesheet" href="./css/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="./css/style (5).css" />
   <!-- endinject -->
 </head>
+
 <body>
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="./index (3).html"><img src="./images/dashboard/logo-1.png" alt=""></a>
-        <a class="navbar-brand brand-logo-mini" href="./index (3).html"><img src="./images/dashboard/logo-1.png" alt="logo"/></a>
+        <a class="navbar-brand brand-logo mr-5" href="./index (3).html"><img src="./images/dashboard/logo-1.png"
+            alt="" /></a>
+        <a class="navbar-brand brand-logo-mini" href="./index (3).html"><img src="./images/dashboard/logo-1.png"
+            alt="logo" /></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -41,103 +50,19 @@
                   <i class="icon-search"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now"
+                aria-label="search" aria-describedby="search" />
             </div>
           </li>
         </ul>
-        <ul class="navbar-nav navbar-nav-right">
-          <li class="nav-item dropdown">
-            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-              <i class="icon-bell mx-0"></i>
-              <span class="count"></span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-success">
-                    <i class="ti-info-alt mx-0"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-normal">Application Error</h6>
-                  <p class="font-weight-light small-text mb-0 text-muted">
-                    Just now
-                  </p>
-                </div>
-              </a>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-warning">
-                    <i class="ti-settings mx-0"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-normal">Settings</h6>
-                  <p class="font-weight-light small-text mb-0 text-muted">
-                    Private message
-                  </p>
-                </div>
-              </a>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-info">
-                    <i class="ti-user mx-0"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-normal">New user registration</h6>
-                  <p class="font-weight-light small-text mb-0 text-muted">
-                    2 days ago
-                  </p>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item nav-profile dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-              <img src="./images/faces/face28.jpg" alt="profile"/>
-              <i class="icon-arrow_drop_down"></i>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item">
-                <i class="ti-settings text-primary"></i>
-                Settings
-              </a>
-              <a class="dropdown-item" href="./index.html">
-                <i class="ti-power-off text-primary"></i>
-                Logout
-              </a>
-            </div>
-          </li>
-        </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
           <span class="icon-menu"></span>
         </button>
       </div>
     </nav>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-      <!-- partial:partials/_settings-panel.html -->
-      <div class="theme-setting-wrapper">
-        <div id="settings-trigger"><i class="ti-settings"></i></div>
-        <div id="theme-settings" class="settings-panel">
-          <i class="settings-close ti-close"></i>
-          <p class="settings-heading">SIDEBAR SKINS</p>
-          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
-          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
-          <p class="settings-heading mt-2">HEADER SKINS</p>
-          <div class="color-tiles mx-0 px-4">
-            <div class="tiles success"></div>
-            <div class="tiles warning"></div>
-            <div class="tiles danger"></div>
-            <div class="tiles info"></div>
-            <div class="tiles dark"></div>
-            <div class="tiles default"></div>
-          </div>
-        </div>
-      </div> 
-      <!-- partial -->
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
@@ -160,16 +85,18 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" href="./student_class/school.html">
               <i class="icon-school menu-icon"></i>
               <span class="menu-title">School</span>
-              <i class="menu-arrow"></i>
+              <!-- <i class="menu-arrow"></i> -->
             </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="./student_class/school.html">Schools</a></li>
-              </ul>
-            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./file/file.html">
+              <i class="icon-file-image-o menu-icon"></i>
+              <span class="menu-title">File Manager</span>
+              <!-- <i class="menu-arrow"></i> -->
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">
@@ -186,23 +113,59 @@
             <div class="col-md-12 grid-margin">
               <div class="row">
                 <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <h4 class="text-behance">Admin</h4>
                   <h3 class="font-weight-bold">Welcome Nelson</h3>
-                  <h6 class="font-weight-normal mb-0">All systems are running smoothly! You have <span class="text-primary">3 unread alerts!</span></h6>
-                </div>
-                <div class="col-12 col-xl-4">
-                 <div class="justify-content-end d-flex">
-                  <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
-                    <button class="btn btn-sm btn-light bg-white dropdown-toggle" type="button" id="dropdownMenuDate2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                     <i class="mdi mdi-calendar"></i> Today (10 Jan 2021)
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuDate2">
-                      <a class="dropdown-item" href="#">January - March</a>
-                      <a class="dropdown-item" href="#">March - June</a>
-                      <a class="dropdown-item" href="#">June - August</a>
-                      <a class="dropdown-item" href="#">August - November</a>
+                  <h6 class="font-weight-normal mb-0 mb-lg-3">
+                    All systems are running smoothly!
+                    <!-- <span class="text-primary">3 unread alerts!</span> -->
+                  </h6>
+                  <a href="" class="btn-behance bg-behance px-3 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Add School
+                  </a>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Add School</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form action="" class="forms-sample">
+                            <div class="form-group">
+                              <label for="exampleInputName1">School Name</label>
+                              <input type="text" class="form-control" id="exampleInputName1" placeholder="Name" />
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputName1">Email Address</label>
+                              <input type="text" class="form-control" id="exampleInputName1" placeholder="Name" />
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save
+                            changes</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                 </div>
+                </div>
+                <div class="col-12 col-xl-4">
+                  <div class="justify-content-end d-flex">
+                    <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
+                      <button class="btn btn-sm btn-light bg-white dropdown-toggle" type="button" id="dropdownMenuDate2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <i class="mdi mdi-calendar"></i> Today (10 Jan 2021)
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuDate2">
+                        <a class="dropdown-item" href="#">January - March</a>
+                        <a class="dropdown-item" href="#">March - June</a>
+                        <a class="dropdown-item" href="#">June - August</a>
+                        <a class="dropdown-item" href="#">August - November</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -223,7 +186,7 @@
                   <div class="card card-dark-blue">
                     <div class="card-body">
                       <p class="mb-4">Total Photos</p>
-                      <p class="fs-30 mb-2">10,000</p>
+                      <p class="fs-30 mb-2">18</p>
                       <!-- <p>22.00% (30 days)</p> -->
                     </div>
                   </div>
@@ -251,6 +214,407 @@
               </div>
             </div>
           </div>
+
+          <div class="row">
+            <section class="" id="sarah-section">
+              <div class="">
+                <div class="row">
+                  <!-- <div class="col-md-12 text-center"></div> -->
+                  <div class="col-md-12">
+                    <div class="featured-carousel owl-carousel pb-lg-5">
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/class-4\ \(1\).jpg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal1();currentSlide1(4)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p onclick="counterFunc()">See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/class-5.jpg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal1();currentSlide1(5)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p onclick="counterFunc()">See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/class-6.jpg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal1();currentSlide1(6)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p onclick="counterFunc()">See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="featured-carousel owl-carousel pb-lg-5">
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/individual-4.jpeg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal2();currentSlide2(4)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p>See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/individual-5.jpeg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal2();currentSlide2(5)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p>See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/individual-6.jpeg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal2();currentSlide2(6)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p>See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="featured-carousel owl-carousel pb-lg-5">
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/grad-4.jpeg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal3();currentSlide3(4)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p>See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/grad-5.jpeg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal3();currentSlide3(2)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p>See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/grad-6.jpeg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal3();currentSlide3(6)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p>See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="featured-carousel owl-carousel pb-lg-5">
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/class-4\ \(1\).jpg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal1();currentSlide1(4)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p onclick="counterFunc()">See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/class-5.jpg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal1();currentSlide1(5)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p onclick="counterFunc()">See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/class-6.jpg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal1();currentSlide1(6)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p onclick="counterFunc()">See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="featured-carousel owl-carousel pb-lg-5">
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/individual-4.jpeg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal2();currentSlide2(4)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p>See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/individual-5.jpeg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal2();currentSlide2(5)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p>See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/individual-6.jpeg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal2();currentSlide2(6)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p>See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="featured-carousel owl-carousel pb-lg-5">
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/grad-4.jpeg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal3();currentSlide3(4)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p>See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/grad-5.jpeg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal3();currentSlide3(2)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p>See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="work">
+                          <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                background-image: url(./images/grad-6.jpeg);
+                              ">
+                            <div class="layover" id="layover">
+                              <div class="btn" onclick="openModal3();currentSlide3(6)">
+                                <p>Preview photo</p>
+                              </div>
+                              <div class="btn" id="btn">
+                                <p>See More</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div id="2-Modal" class="modal">
+              <div class="modal-content">
+                <span class="close cursor" onclick="closeModal1()"><i class="icon-close demi-close"></i></span>
+
+                <div class="mySlides 1-Slide">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="./images/class-4 (1).jpg" style="width: 100%" />
+                </div>
+
+                <div class="mySlides 1-Slide">
+                  <div class="numbertext">5 / 6</div>
+                  <img src="./images/class-5.jpg" style="width: 100%" />
+                </div>
+
+                <div class="mySlides 1-Slide">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="./images/class-6.jpg" style="width: 100%" />
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlide1(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlide1(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+              </div>
+            </div>
+
+            <div id="3-Modal" class="modal">
+              <div class="modal-content">
+                <span class="close cursor" onclick="closeModal2()"><i class="icon-close demi-close"></i></span>
+
+                <div class="mySlides 2-Slide">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="./images/individual-4.jpeg" style="width: 100%" />
+                </div>
+
+                <div class="mySlides 2-Slide">
+                  <div class="numbertext">5 / 6</div>
+                  <img src="./images/individual-5.jpeg" style="width: 100%" />
+                </div>
+
+                <div class="mySlides 2-Slide">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="./images/individual-6.jpeg" style="width: 100%" />
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlide2(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlide2(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+              </div>
+            </div>
+
+            <div id="4-Modal" class="modal">
+              <div class="modal-content">
+                <span class="close cursor" onclick="closeModal3()"><i class="icon-close demi-close"></i></span>
+                <div class="mySlides 3-Slide">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="./images/grad-4.jpeg" style="width: 100%" />
+                </div>
+
+                <div class="mySlides 3-Slide">
+                  <div class="numbertext">5 / 6</div>
+                  <img src="./images/grad-5.jpeg" style="width: 100%" />
+                </div>
+
+                <div class="mySlides 3-Slide">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="./images/grad-6.jpeg" style="width: 100%" />
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlide3(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlide3(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
@@ -259,18 +623,20 @@
             <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023</span>
             <!-- <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="ti-heart text-danger ml-1"></i></span> -->
           </div>
-          <div class="d-sm-flex justify-content-center justify-content-sm-between">
-          </div>
-        </footer> 
+          <div class="d-sm-flex justify-content-center justify-content-sm-between"></div>
+        </footer>
         <!-- partial -->
       </div>
       <!-- main-panel ends -->
-    </div>   
+    </div>
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
 
   <!-- plugins:js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <script src="./vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
@@ -290,8 +656,15 @@
   <!-- Custom js for this page-->
   <script src="./js/dashboard.js"></script>
   <script src="./js/Chart.roundedBarCharts.js"></script>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/popper.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/script.js"></script>
+  <!-- <script src="./js/custom.js"></script> -->
   <!-- End custom js for this page-->
 </body>
 
 </html>
-

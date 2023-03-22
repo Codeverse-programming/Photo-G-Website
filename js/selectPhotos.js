@@ -1,39 +1,39 @@
 count = 0;
 
 function counterFunc() {
-    count++;
-    document.getElementById("count").innerHTML = count;
-    document.getElementById("click-button").style.display = "none";
+    // count++;
+    // document.getElementById("count").innerHTML = count;
+    // document.getElementById("click-button").style.display = "none";
 
-    // if (typeof (Storage) !== "undefined") {
-    //     if (localStorage.count) {
-    //         localStorage.count = Number(localStorage.count) + 1;
-    //     } else {
-    //         localStorage.count = 1;
-    //     }
-    //     document.getElementById("count").innerHTML = localStorage.count;
-    //     document.getElementById("click-button").style.display ="none"
-    //     // document.getElementById("select-button").style.display ="block"
-    // } else {
-    //     document.getElementById("count").innerHTML = "Sorry, the browser you used does not support web storage.";
-    // }
+    if (typeof (Storage) !== "undefined") {
+        if (localStorage.count) {
+            localStorage.count = Number(localStorage.count) + 1;
+        } else {
+            localStorage.count = 1;
+        }
+        document.getElementById("count").innerHTML = localStorage.count;
+        document.getElementById("click-button").style.display ="none"
+        // document.getElementById("select-button").style.display ="block"
+    } else {
+        document.getElementById("count").innerHTML = "Sorry, the browser you used does not support web storage.";
+    }
 }
 
 function hideFunc() {
-    count--;
-    document.getElementById("count").innerHTML = count;
+    // count--;
+    // document.getElementById("count").innerHTML = count;
 
-    // if (typeof (Storage) !== "undefined") {
-    //     if (localStorage.count) {
-    //         localStorage.count = Number(localStorage.count) - 1;
-    //     } else {
-    //         localStorage.count = 1;
-    //     }
-    //     document.getElementById("count").innerHTML = localStorage.count;
-    //     // document.getElementById("select-button").style.display = "block"
-    // } else {
-    //     document.getElementById("count").innerHTML = "Sorry, the browser you used does not support web storage.";
-    // }
+    if (typeof (Storage) !== "undefined") {
+        if (localStorage.count) {
+            localStorage.count = Number(localStorage.count) - 1;
+        } else {
+            localStorage.count = 1;
+        }
+        document.getElementById("count").innerHTML = localStorage.count;
+        // document.getElementById("select-button").style.display = "block"
+    } else {
+        document.getElementById("count").innerHTML = "Sorry, the browser you used does not support web storage.";
+    }
 }
 
 // document.querySelector(".clickedButton").addEventListener("click", e => {
